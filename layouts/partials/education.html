@@ -1,0 +1,10 @@
+<h2><i class="{{ .Site.Params.education.class }} {{ .Site.Params.education.icon }}"></i> {{ .Site.Params.education.title }}</h2>
+<div class="section">
+    {{ range .Site.Params.education.list }}
+    <dl>
+        <dt><strong>{{ if .link }}<a href="{{ .link }}">{{ .school }}</a>{{ else }} {{ .school }} {{ end }}</strong></dt>
+        <dd>{{ .degree }}, {{ .dates | markdownify }}</dd>
+        <dd>{{ .description | markdownify }}</dd>
+    </dl>
+    {{ end }}
+</div>

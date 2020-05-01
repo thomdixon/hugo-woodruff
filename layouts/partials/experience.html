@@ -1,0 +1,10 @@
+<h2><i class="{{ .Site.Params.experience.class }} {{ .Site.Params.experience.icon }}"></i> {{ .Site.Params.experience.title }}</h2>
+<div class="section">
+    {{ range .Site.Params.experience.list }}
+    <dl>
+        <dt><strong>{{ if .link }}<a href="{{ .link }}">{{ .company }}</a>{{ else }} {{ .company }} {{ end }}</strong></dt>
+        <dd>{{ .position }}, {{ .dates | markdownify }}</dd>
+        <dd>{{ .description | markdownify }}</dd>
+    </dl>
+    {{ end }}
+</div>

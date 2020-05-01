@@ -1,0 +1,119 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "hugo-woodruff"
+
+
+[params]
+    title = "Hello, world."
+    author = "John Doe"
+    description = "Hello, world."
+
+    [params.contact]
+        email = "john.doe@example.com"
+        phone = "+1-555-555-5555"
+
+    [[params.contact.list]]
+        class = "fab"
+        icon = "fa-linkedin-in"
+        url = "#"
+        title = "LinkedIn"
+
+    [[params.contact.list]]
+        class = "fab"
+        icon = "fa-github"
+        url = "#"
+        title = "GitHub"
+    
+     [[params.contact.list]]
+        class = "fab"
+        icon = "fa-facebook"
+        url = "#"
+        title = "Facebook"
+    
+    [params.profile]
+        class ="fas"
+        icon = "fa-user-astronaut"
+        title = "About Me"
+        description = """\
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet \
+turpis in nisl bibendum cursus. Cras et nisl ipsum. Suspendisse elementum \
+ultrices ex, a ultricies tortor ultricies ut. Nunc aliquam ligula sapien, \
+quis iaculis orci accumsan id. Fusce posuere erat odio, ullamcorper faucibus \
+nisi ornare nec.\
+"""
+    
+    [params.experience]
+        class = "fas"
+        icon = "fa-briefcase"
+        title = "Industry Experience"
+
+    [[params.experience.list]]
+        company = "Lorem Ipsum, LLC"
+        position = "Vice President"
+        dates = "2020 - *Present*"
+		link = "#"
+        description = """\
+Phasellus auctor varius volutpat. Sed euismod leo vitae mattis scelerisque. \
+Mauris dignissim dui risus, eget tristique est volutpat ut.\
+"""
+
+    [[params.experience.list]]
+        company = "Big Lorem Ipsum Corp."
+        position = "Senior Director"
+        dates = "2016 - 2017"
+		link = "#"
+        description = """\
+Donec venenatis vulputate metus et efficitur. Sed ut cursus lectus. Proin \
+lacus lacus, consequat non hendrerit at, sagittis in sapien. In ipsum felis, \
+posuere nec nisi vel, dictum porttitor lectus.\
+"""
+
+    [params.community]
+        class = "fas"
+        icon = "fa-hands-helping"
+        title = "Community Involvement"
+        description = """\
+Fusce laoreet tincidunt nibh vitae cursus. Nullam feugiat felis in leo \
+vulputate, ut maximus diam convallis. Suspendisse viverra nulla elementum \
+volutpat commodo.
+
+Nam fermentum, justo vitae tristique viverra, mauris eros pulvinar sem, \
+scelerisque aliquet turpis odio id ante. Aliquam consectetur non tortor eu \
+gravida.
+
+- Sed ullamcorper,
+- velit et mattis maximus,
+- purus purus volutpat dolor,
+
+ut pharetra nunc magna id leo. Proin sed consectetur est, in scelerisque \
+purus. Nunc faucibus pellentesque maximus. Donec aliquet mauris a ante \
+vulputate, id auctor arcu blandit. Donec consectetur leo turpis, rhoncus \
+aliquam odio vulputate a. Vivamus et libero eget lacus pellentesque convallis. \
+Sed sit amet luctus nisl.\
+"""
+
+    [params.education]
+        class = "fas"
+        icon = "fa-graduation-cap"
+        title = "Education"
+
+    [[params.education.list]]
+        degree = "Master of Arts, English"
+        school = "University of Lorem Ipsum"
+        dates = "2010 - 2012"
+		link = "#"
+        description = """\
+Sed condimentum augue eu ante elementum blandit. Curabitur at nisi odio. \
+Cras pellentesque ultricies gravida.\
+"""
+
+    [[params.education.list]]
+        degree = "Bachelor of Arts, English"
+        school = "Lorem Ipsum University"
+        dates = "2006 - 2010"
+		link = "#"
+        description = """\
+Pellentesque arcu lectus, interdum eget nunc cursus, porttitor venenatis ex. \
+In hac habitasse platea dictumst. Phasellus ut nisi metus.\
+"""
